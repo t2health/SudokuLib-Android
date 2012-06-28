@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A sudoku puzzle is a grid of nine-by-nine cells, that has been further subdivided into &quot;regions&quot; of three-by-three cells."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:baselineAligned="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="380px"
+                android:layout_gravity="center"
+                android:src="@drawable/instructions" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Row"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#d1c97f" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Column"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#bbdea6" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Region"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#bfcfe6" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="The objective of sudoku is to enter a digit from 1 through 9 in each cell such that:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Each horizontal row contains each digit exactly once"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#d1c97f"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Each vertical column contains each digit exactly once"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#bbdea6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Each region contains each digit exactly once"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#bfcfe6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="The puzzler&apos;s job is to fill each empty cell without breaking any of the rules above."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</ScrollView>
